@@ -16,53 +16,54 @@
     <section>
         <div class="main-area">                                                 <!--area konten-->                  
             <div class="title-area">Kalkulator Suhu</div>                       <!--judul-->
-            Masukkan suhu derajat Celsius (C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil 
-            konversi dalam bentuk Farenheit (F).
-            <div class="area-hitung">
-                <div class="area-input">
-                    <h3>INPUT :</h3>
-                    <div class="dropdown">
-                        <button class="dropbtn">Dropdown</button>
-                        <div class="dropdown-content">
-                            <a href="#">Celsius</a>
-                            <a href="#">Farenheit</a>
+            Masukkan suhu derajat <span id="suhu1text">Celsius</span> (<span id="satuan1text">Celsius</span>) 
+            ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk 
+            <span id="suhu2text">Celsius</span> (<span id="satuan2text">Celsius</span>).
+            <form id="forminput">
+                <div class="area-hitung">
+                    <div class="area-input">
+                        <h3>INPUT :</h3>
+                        <div class="dropdown">
+                            <button class="dropbtn" id="suhu1">Celsius</button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="CF()">Celsius</a>
+                                <a href="#" onclick="FC()">Fahrenheit</a>
+                            </div>
+                        </div>
+                        <div class="area-input-field">
+                            <input type="number" class="input" id="input" required>
+                            <div class="area-input-corner"></div>
+                            <div class="area-input-field-satuan" id="satuan1">C</div>
                         </div>
                     </div>
-                    <div class="area-input-field">
-                        <input type="number" class="input">
-                        <div class="area-input-corner"></div>
-                        <div class="area-input-field-satuan">C</div>
-                        72
-                    </div>
-                </div>
-                <div class="area-hasil">
-                    <h3>HASIL :</h3>
-                    <div class="dropdown">
-                        <button class="dropbtn">Dropdown</button>
-                        <div class="dropdown-content">
-                            <a href="#">Celsius</a>
-                            <a href="#">Farenheit</a>
+                    <div class="area-hasil">
+                        <h3>HASIL :</h3>
+                        <div class="dropdown">
+                            <button class="dropbtn" id="suhu2">Fahrenheit</button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="FC()">Celsius</a>
+                                <a href="#" onclick="CF()">Fahrenheit</a>
+                            </div>
+                        </div>
+                        <div class="area-hasil-field">
+                            <div type="number" class="hasil" id="hasil"></div>
+                            <div class="area-hasil-corner"></div>
+                            <div class="area-hasil-field-satuan" id="satuan2">F</div>
                         </div>
                     </div>
-                    <div class="area-hasil-field">
-                        <input type="number" class="hasil">
-                        <div class="area-hasil-corner"></div>
-                        <div class="area-hasil-field-satuan">F</div>
-                        72
+                </div>
+                <div class="area-button">
+                    <button class="button" type="submit" onclick="perhitungan()">Konversi</button>
+                    <button class="button" onclick="buttonreset()">Reset</button>
+                    <button class="button" onclick="reverse()" style="margin-right: 0;">Reverse</button>
+                </div>
+                <div class="area-cara">
+                    <h3>CARA KALKULASI :</h3>
+                    <div class="area-cara-field">
+                        <input type="text" class="cara">
                     </div>
                 </div>
-            </div>
-            <div class="area-button">
-                <button class="button">Konversi</button>
-                <button class="button">Reset</button>
-                <button class="button" style="margin-right: 0;">Reverse</button>
-            </div>
-            <div class="area-cara">
-                <h3>CARA KALKULASI :</h3>
-                <div class="area-cara-field">
-                    <input type="text" class="cara">
-                </div>
-            </div>
+            </form>
         </div>
     </section>
 </body>

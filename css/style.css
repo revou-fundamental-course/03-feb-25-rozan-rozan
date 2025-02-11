@@ -64,6 +64,23 @@ body{
     width: calc(50% - 10px);
     margin-left: 10px;
 }
+@media only screen and (max-width: 480px) {
+    .area-hitung{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .area-input{
+        width: 100%;
+        margin-right: 0;
+    }
+    .area-hasil{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
 
 .area-input-field{
     background-color: white;
@@ -120,7 +137,7 @@ body{
     position: absolute;
     text-align: center;
     font-size: xx-large;
-    border-style: none;
+    align-content: center;
 }
 .area-hasil-corner{
     background-color: rgb(148, 148, 255);
