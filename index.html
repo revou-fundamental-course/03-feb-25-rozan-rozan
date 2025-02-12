@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Suhu</title>
+    <title>Kalkulator Suhu 2</title>
     <link rel="stylesheet" href="css/style.css">                                <!--link css-->
     <script defer src="js/script.js"></script>                                  <!--link js-->
 </head>
 
 <header>                                                                        <!--NAVBAR-->
-    <div class="navbar"></div>
+    <div class="navbar">
+        <div class="nav-area">
+            <img class="nav-logo" src="assets\rhozanmplogo.png" alt="">
+            <a class="nav-menu" href="">Contact</a>
+            <a class="nav-menu" href="">Home</a>
+        </div>
+    </div>
 </header>
 
 <body>
     <section>
         <div class="main-area">                                                 <!--area konten-->                  
             <div class="title-area">Kalkulator Suhu</div>                       <!--judul-->
-            Masukkan suhu derajat <span id="suhu1text">Celsius</span> (<span id="satuan1text">Celsius</span>) 
+            Masukkan suhu derajat <b><span id="suhu1text">Celsius</span> (<span id="singkat1text">C</span>&deg;)</b> 
             ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk 
-            <span id="suhu2text">Celsius</span> (<span id="satuan2text">Celsius</span>).
+            <b><span id="suhu2text">Celsius</span> (<span id="singkat2text">F</span>&deg;)</b>.
             <form id="forminput">
                 <div class="area-hitung">
                     <div class="area-input">
                         <h3>INPUT :</h3>
                         <div class="dropdown">
-                            <button class="dropbtn" id="suhu1">Celsius</button>
+                            <button class="dropbtn" id="suhu1">
+                                Celsius
+                            </button>
                             <div class="dropdown-content">
-                                <a href="#" onclick="CF()">Celsius</a>
-                                <a href="#" onclick="FC()">Fahrenheit</a>
+                                <a href="#" onclick="satuC()">Celsius</a>
+                                <a href="#" onclick="satuF()">Fahrenheit</a>
                             </div>
                         </div>
                         <div class="area-input-field">
                             <input type="number" class="input" id="input" required>
                             <div class="area-input-corner"></div>
-                            <div class="area-input-field-satuan" id="satuan1">C</div>
+                            <div class="area-input-field-satuan" id="singkat1">C</div>
                         </div>
+                    </div>
+                    <div class="area-button mobile">
+                        <button class="button" type="submit" onclick="perhitungan()">Konversi</button>
+                        <button class="button" onclick="buttonreset()">Reset</button>
+                        <button class="button" onclick="reverse()" style="margin-right: 0;">Reverse</button>
                     </div>
                     <div class="area-hasil">
                         <h3>HASIL :</h3>
                         <div class="dropdown">
                             <button class="dropbtn" id="suhu2">Fahrenheit</button>
                             <div class="dropdown-content">
-                                <a href="#" onclick="FC()">Celsius</a>
-                                <a href="#" onclick="CF()">Fahrenheit</a>
+                                <a href="#" onclick="duaC()">Celsius</a>
+                                <a href="#" onclick="duaF()">Fahrenheit</a>
                             </div>
                         </div>
                         <div class="area-hasil-field">
                             <div type="number" class="hasil" id="hasil"></div>
                             <div class="area-hasil-corner"></div>
-                            <div class="area-hasil-field-satuan" id="satuan2">F</div>
+                            <div class="area-hasil-field-satuan" id="singkat2">F</div>
                         </div>
                     </div>
                 </div>
-                <div class="area-button">
+                <div class="area-button desktop">
                     <button class="button" type="submit" onclick="perhitungan()">Konversi</button>
                     <button class="button" onclick="buttonreset()">Reset</button>
                     <button class="button" onclick="reverse()" style="margin-right: 0;">Reverse</button>
@@ -60,7 +73,10 @@
                 <div class="area-cara">
                     <h3>CARA KALKULASI :</h3>
                     <div class="area-cara-field">
-                        <input type="text" class="cara">
+                        <div type="text" class="cara" id="cara"></div><br>
+                        <div class="footer-content">
+                            &copy; 2025 by Aqila Rhozan Yudisthira
+                        </div>
                     </div>
                 </div>
             </form>
@@ -70,7 +86,6 @@
 
 <footer>
     <div class="footer">
-        test
     </div>
 </footer>
 
