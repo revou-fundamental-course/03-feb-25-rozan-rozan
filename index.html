@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Suhu</title>
-    <link rel="stylesheet" href="css/style.css">                                <!--link css-->
-    <script defer src="js/script.js"></script>                                  <!--link js-->
+    <link rel="stylesheet" href="css/style.css">                                                <!--LINK CSS-->
+    <script defer src="js/script.js"></script>                                                  <!--LINK JS-->
 </head>
 
-<header>                                                                        <!--NAVBAR-->
+<header>                                                                                        <!--NAVBAR-->
     <div class="navbar">
         <div class="nav-area">
             <img class="nav-logo" src="assets\rhozanmplogo.png" alt="">
@@ -20,19 +20,17 @@
 
 <body>
     <section>
-        <div class="main-area">                                                 <!--area konten-->                  
-            <div class="title-area">Kalkulator Suhu</div>                       <!--judul-->
+        <div class="main-area">                                                                 <!--AREA KONTEN-->                  
+            <div class="title-area">Kalkulator Suhu</div>                                       <!--JUDUL-->
             Masukkan suhu derajat <b><span id="suhu1text">Celsius</span> (<span id="singkat1text">C</span>&deg;)</b> 
             ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk 
             <b><span id="suhu2text">Celsius</span> (<span id="singkat2text">F</span>&deg;)</b>.
             <form id="forminput">
                 <div class="area-hitung">
-                    <div class="area-input">
+                    <div class="area-input">                                                    <!--AREA INPUT-->
                         <h3>INPUT :</h3>
                         <div class="dropdown">
-                            <button class="dropbtn" id="suhu1">
-                                Celsius
-                            </button>
+                            <button class="dropbtn" id="suhu1">Celsius</button>
                             <div class="dropdown-content">
                                 <a href="#" onclick="satuC()">Celsius</a>
                                 <a href="#" onclick="satuF()">Fahrenheit</a>
@@ -44,12 +42,12 @@
                             <div class="area-input-field-satuan" id="singkat1">C</div>
                         </div>
                     </div>
-                    <div class="area-button mobile">
+                    <div class="area-button mobile">                                <!--hanya muncul pada mobile-->
                         <button class="button" type="submit" onclick="perhitungan()">Konversi</button>
                         <button class="button" onclick="buttonreset()">Reset</button>
                         <button class="button" onclick="reverse()" style="margin-right: 0;">Reverse</button>
                     </div>
-                    <div class="area-hasil">
+                    <div class="area-hasil">                                                    <!--AREA HASIL-->
                         <h3>HASIL :</h3>
                         <div class="dropdown">
                             <button class="dropbtn" id="suhu2">Fahrenheit</button>
@@ -65,12 +63,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="area-button desktop">
+                <div class="area-button desktop">                                   <!--hanya muncul pada desktop-->
                     <button class="button" type="submit" onclick="perhitungan()">Konversi</button>
                     <button class="button" onclick="buttonreset()">Reset</button>
                     <button class="button" onclick="reverse()" style="margin-right: 0;">Reverse</button>
                 </div>
-                <div class="area-cara">
+                <div class="area-cara">                                                         <!--AREA CARA-->
                     <h3>CARA KALKULASI :</h3>
                     <div class="area-cara-field">
                         <div type="text" class="cara" id="cara"></div><br>
@@ -85,7 +83,7 @@
 </body>
 
 <footer>
-    <div class="footer">
+    <div class="footer">                                                                        <!--AREA FOOTER-->
     </div>
 </footer>
 
