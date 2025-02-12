@@ -55,12 +55,12 @@ function satuC(){                                                           //--
     }else{
         if (suhu1 == "Celsius") {                                                   //--jika suhu1 == C pada kasus ini otomatis suhu2 == F
             hasil = input * (9 / 5) + 32;
-            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil + "F&deg;";
+            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil.toFixed(1) + "F&deg;";
         }else{                                                                      //--sebaliknya
             hasil = (input - 32) * 9 / 5;
-            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil + "C&deg;";
+            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil.toFixed(1) + "C&deg;";
         }
-        document.getElementById("hasil").innerHTML = hasil;
+        document.getElementById("hasil").innerHTML = hasil.toFixed(1);
 
         console.log("  input : ", input);
         console.log("  hasil : ", hasil);
@@ -114,12 +114,12 @@ function satuF(){
     }else{
         if (suhu1 == "Celsius") {                                                   //--jika suhu1 == C pada kasus ini otomatis suhu2 == F
             hasil = input * (9 / 5) + 32;
-            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil + "F&deg;";
+            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil.toFixed(1) + "F&deg;";
         }else{                                                                      //--sebaliknya
             hasil = (input - 32) * 9 / 5;
-            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil + "C&deg;";
+            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil.toFixed(1) + "C&deg;";
         }
-        document.getElementById("hasil").innerHTML = hasil;
+        document.getElementById("hasil").innerHTML = hasil.toFixed(1);
 
         console.log("  input : ", input);
         console.log("  hasil : ", hasil);
@@ -173,12 +173,12 @@ function duaC(){                                                           //--P
     }else{
         if (suhu1 == "Celsius") {                                                   //--jika suhu1 == C pada kasus ini otomatis suhu2 == F
             hasil = input * (9 / 5) + 32;
-            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil + "F&deg;";
+            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil.toFixed(1) + "F&deg;";
         }else{                                                                      //--sebaliknya
             hasil = (input - 32) * 9 / 5;
-            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil + "C&deg;";
+            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil.toFixed(1) + "C&deg;";
         }
-        document.getElementById("hasil").innerHTML = hasil;
+        document.getElementById("hasil").innerHTML = hasil.toFixed(1);
 
         console.log("  input : ", input);
         console.log("  hasil : ", hasil);
@@ -232,12 +232,12 @@ function duaF(){
     }else{
         if (suhu1 == "Celsius") {                                                   //--jika suhu1 == C pada kasus ini otomatis suhu2 == F
             hasil = input * (9 / 5) + 32;
-            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil + "F&deg;";
+            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil.toFixed(1) + "F&deg;";
         }else{                                                                      //--sebaliknya
             hasil = (input - 32) * 9 / 5;
-            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil + "C&deg;";
+            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil.toFixed(1) + "C&deg;";
         }
-        document.getElementById("hasil").innerHTML = hasil;
+        document.getElementById("hasil").innerHTML = hasil.toFixed(1);
 
         console.log("  input : ", input);
         console.log("  hasil : ", hasil);
@@ -261,12 +261,12 @@ function perhitungan(){
     }else{
         if (suhu1 == "Celsius") {                                                   //--jika suhu1 == C pada kasus ini otomatis suhu2 == F
             hasil = input * (9 / 5) + 32; 
-            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil + "F&deg;";
+            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil.toFixed(1) + "F&deg;";
         }else{                                                                      //--sebaliknya
             hasil = (input - 32) * 9 / 5; 
-            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil + "C&deg;";
+            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil.toFixed(1) + "C&deg;";
         }
-        document.getElementById("hasil").innerHTML = hasil;
+        document.getElementById("hasil").innerHTML = hasil.toFixed(1);
         
         console.log("  suhu1 : ", suhu1);
         console.log("  suhu2 : ", suhu2);
@@ -336,12 +336,12 @@ function reverse(){
     }else{
         if (suhu1 == "Celsius") {                                                   //--jika suhu1 == C pada kasus ini otomatis suhu2 == F
             hasil = input * (9 / 5) + 32;
-            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil + "F&deg;";
+            document.getElementById("cara").innerHTML = input + "C&deg; * (9/5) + 32 = " + hasil.toFixed(1) + "F&deg;";
         }else{                                                                      //--sebaliknya
             hasil = (input - 32) * 9 / 5;
-            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil + "C&deg;";
+            document.getElementById("cara").innerHTML = "(" + input + "F&deg; - 32) * 9/5 = " + hasil.toFixed(1) + "C&deg;";
         }
-        document.getElementById("hasil").innerHTML = hasil;
+        document.getElementById("hasil").innerHTML = hasil.toFixed(1);
         
         console.log("  input : ", input);
         console.log("  hasil : ", hasil);
